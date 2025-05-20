@@ -10,6 +10,9 @@ restore:
 
 build:
 	dotnet build
+
+test:
+	dotnet test
 	
 format:
 	dotnet format
