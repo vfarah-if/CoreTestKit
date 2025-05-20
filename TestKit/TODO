@@ -1,5 +1,5 @@
-☐ Create a .net core test project to start testing in @critical
-☐ Document the basics of tdd, pairing @high
-☐ Try add automatic code formatting on save @medium
-☐ Create a Domain and Console application to test stuff with this @today
-☐ Document everything extensively @low
+✔ Create a .net core test project to start testing in @critical @done(25-05-20 16:41)
+✔ Document the basics of tdd, pairing @high @done(25-05-20 16:41)
+✔ Try add automatic code formatting on save @medium @done(25-05-20 16:41)
+✔ Create a Domain and Console application to test stuff with this @today @done(25-05-20 16:41)
+✔ Document everything extensively @done(25-05-20 16:42)
