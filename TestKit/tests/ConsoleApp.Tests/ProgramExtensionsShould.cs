@@ -14,7 +14,7 @@ public class ProgramExtensionsShould
         _services = new ServiceCollection();
         _services
             .AddLogging()
-            .AddSingleton<ICalculatorCommand, CalculatorCommand>() 
+            .AddApplicationCommands()
             .AddRootCommand();   
     }
     
