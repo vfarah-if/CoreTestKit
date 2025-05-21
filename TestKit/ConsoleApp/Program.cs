@@ -30,7 +30,7 @@ public class Program
             .AddApplicationCommands()
             .AddRootCommand();
 
-        builder.ConfigureLogging();
+        builder.AddLogging();
 
         return builder.Build();
     }

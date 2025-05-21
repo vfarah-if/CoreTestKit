@@ -21,4 +21,4 @@ run_help_on:
 
 run_add:
 	@echo "Run Add numbers example"
-	cd ./publish && dotnet ConsoleApp.dll add --values "2,3"
+	cd ./publish && dotnet ConsoleApp.dll add --values "2,3,4,5,6"
