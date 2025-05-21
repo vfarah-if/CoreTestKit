@@ -1,11 +1,9 @@
 using System.CommandLine;
-using System.Diagnostics.CodeAnalysis;
 using ConsoleApp.Commands;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ConsoleApp;
 
-[ExcludeFromCodeCoverage]
 public static class ProgramExtensions
 {
     public static IServiceCollection AddApplicationCommands(this IServiceCollection services)
