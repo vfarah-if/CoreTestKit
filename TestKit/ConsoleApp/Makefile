@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: publish run_help run_help_on run_publish_stockfeed
+.PHONY: publish run_help run_help_on run_add
 
 publish:
 	@echo "Publish Test Commander"
@@ -21,4 +21,4 @@ run_help_on:
 
 run_add:
 	@echo "Run Add numbers example"
-	cd ./publish && dotnet ConsoleApp.dll add --values "2,3,4,5,6"
+	cd ./publish && dotnet ConsoleApp.dll add --values "2,3,4,5,6,7,100"
