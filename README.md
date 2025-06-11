@@ -148,11 +148,11 @@ Effective pair programming enhances collaboration, knowledge sharing, and code q
 
 **Conway’s Law** states:
 
-> _“Any organisation that designs a system will produce a design whose structure is a copy of the organisation’s communication structure.”_ — Melvin Conway, 1967
+> _“Any organisation that designs a system will produce a design whose structure is a copy of the organisation’s communication structure.”_ - Melvin Conway, 1967
 
 ### 🧠 Why Communication Matters
 
-Communication isn’t just a team dynamic—it’s a **determinant of software architecture**. According to Conway’s Law, how teams communicate (or fail to) is directly reflected in how systems are designed and built.
+Communication isn’t just a team dynamic-it’s a **determinant of software architecture**. According to Conway’s Law, how teams communicate (or fail to) is directly reflected in how systems are designed and built.
 
 ### 🔄 Key Implications
 
@@ -162,29 +162,29 @@ Communication isn’t just a team dynamic—it’s a **determinant of software a
 
 ### 🛠 Architectural Relevance
 
-- When designing a system, **organisational structure should be intentional**. Aligning team structure to desired architecture—an approach known as **“inverse Conway manoeuvre”**—helps achieve scalable, maintainable solutions.
+- When designing a system, **organisational structure should be intentional**. Aligning team structure to desired architecture-an approach known as **“inverse Conway manoeuvre”**-helps achieve scalable, maintainable solutions.
 - Practices like **Domain-Driven Design (DDD)** and **Team Topologies** leverage this principle to ensure that software mirrors the most effective communication patterns.
 
 ## 🧭 The CORE Feedback Method (Radical Candor)
 
 The CORE model offers a structured approach to delivering feedback that is both kind and clear, ensuring it is actionable and fosters trust. It complements the Radical Candor framework, which emphasises **Caring Personally** while **Challenging Directly**.([Radical Candor](https://www.radicalcandor.com/blog/fast-and-meangingful-feedback/?utm_source=chatgpt.com), [Radical Candor](https://www.radicalcandor.com/our-approach/?utm_source=chatgpt.com))
 
-### 🔹 C — Context
+### 🔹 C - Context
 
 Specify the situation to ground the feedback.
 _Example_: "During yesterday's team meeting ..."
 
-### 🔹 O — Observation
+### 🔹 O - Observation
 
 Describe the specific behaviour observed, avoiding interpretations or judgments.
 _Example_: "You interrupted the client before they finished explaining their concern."
 
-### 🔹 R — Result
+### 🔹 R - Result
 
 Explain the impact of the behaviour on the team, project, or individual.
 _Example_: "This led to confusion about our proposed solution."
 
-### 🔹 E — nExt stEps
+### 🔹 E - nExt stEps
 
 Suggest actionable steps or invite collaboration on solutions.
 _Example_: "In future meetings, let's ensure we allow clients to fully express their points before responding."([Radical Candor](https://www.radicalcandor.com/blog/care-personally-team))
