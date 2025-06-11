@@ -1,0 +1,373 @@
+﻿Welcome to the store!
+-------- day 0 --------
+name, sellIn, quality
+Ornamental vase, 10, 20
+Aged Brie, 2, 0
+Set of teacups, 5, 7
+Diamond ring, 0, 80
+Diamond ring, -1, 80
+Backstage passes to concert, 15, 20
+Backstage passes to concert, 10, 49
+Backstage passes to concert, 5, 49
+Fresh apples, 3, 17
+
+-------- day 1 --------
+name, sellIn, quality
+Ornamental vase, 9, 19
+Aged Brie, 1, 0
+Set of teacups, 4, 6
+Diamond ring, -1, 78
+Diamond ring, -2, 78
+Backstage passes to concert, 14, 19
+Backstage passes to concert, 9, 48
+Backstage passes to concert, 4, 48
+Fresh apples, 2, 16
+
+-------- day 2 --------
+name, sellIn, quality
+Ornamental vase, 8, 18
+Aged Brie, 0, 0
+Set of teacups, 3, 5
+Diamond ring, -2, 76
+Diamond ring, -3, 76
+Backstage passes to concert, 13, 18
+Backstage passes to concert, 8, 47
+Backstage passes to concert, 3, 47
+Fresh apples, 1, 15
+
+-------- day 3 --------
+name, sellIn, quality
+Ornamental vase, 7, 17
+Aged Brie, -1, 0
+Set of teacups, 2, 4
+Diamond ring, -3, 74
+Diamond ring, -4, 74
+Backstage passes to concert, 12, 17
+Backstage passes to concert, 7, 46
+Backstage passes to concert, 2, 46
+Fresh apples, 0, 14
+
+-------- day 4 --------
+name, sellIn, quality
+Ornamental vase, 6, 16
+Aged Brie, -2, 0
+Set of teacups, 1, 3
+Diamond ring, -4, 72
+Diamond ring, -5, 72
+Backstage passes to concert, 11, 16
+Backstage passes to concert, 6, 45
+Backstage passes to concert, 1, 45
+Fresh apples, -1, 12
+
+-------- day 5 --------
+name, sellIn, quality
+Ornamental vase, 5, 15
+Aged Brie, -3, 0
+Set of teacups, 0, 2
+Diamond ring, -5, 70
+Diamond ring, -6, 70
+Backstage passes to concert, 10, 15
+Backstage passes to concert, 5, 44
+Backstage passes to concert, 0, 44
+Fresh apples, -2, 10
+
+-------- day 6 --------
+name, sellIn, quality
+Ornamental vase, 4, 14
+Aged Brie, -4, 0
+Set of teacups, -1, 0
+Diamond ring, -6, 68
+Diamond ring, -7, 68
+Backstage passes to concert, 9, 14
+Backstage passes to concert, 4, 43
+Backstage passes to concert, -1, 42
+Fresh apples, -3, 8
+
+-------- day 7 --------
+name, sellIn, quality
+Ornamental vase, 3, 13
+Aged Brie, -5, 0
+Set of teacups, -2, 0
+Diamond ring, -7, 66
+Diamond ring, -8, 66
+Backstage passes to concert, 8, 13
+Backstage passes to concert, 3, 42
+Backstage passes to concert, -2, 40
+Fresh apples, -4, 6
+
+-------- day 8 --------
+name, sellIn, quality
+Ornamental vase, 2, 12
+Aged Brie, -6, 0
+Set of teacups, -3, 0
+Diamond ring, -8, 64
+Diamond ring, -9, 64
+Backstage passes to concert, 7, 12
+Backstage passes to concert, 2, 41
+Backstage passes to concert, -3, 38
+Fresh apples, -5, 4
+
+-------- day 9 --------
+name, sellIn, quality
+Ornamental vase, 1, 11
+Aged Brie, -7, 0
+Set of teacups, -4, 0
+Diamond ring, -9, 62
+Diamond ring, -10, 62
+Backstage passes to concert, 6, 11
+Backstage passes to concert, 1, 40
+Backstage passes to concert, -4, 36
+Fresh apples, -6, 2
+
+-------- day 10 --------
+name, sellIn, quality
+Ornamental vase, 0, 10
+Aged Brie, -8, 0
+Set of teacups, -5, 0
+Diamond ring, -10, 60
+Diamond ring, -11, 60
+Backstage passes to concert, 5, 10
+Backstage passes to concert, 0, 39
+Backstage passes to concert, -5, 34
+Fresh apples, -7, 0
+
+-------- day 11 --------
+name, sellIn, quality
+Ornamental vase, -1, 8
+Aged Brie, -9, 0
+Set of teacups, -6, 0
+Diamond ring, -11, 58
+Diamond ring, -12, 58
+Backstage passes to concert, 4, 9
+Backstage passes to concert, -1, 37
+Backstage passes to concert, -6, 32
+Fresh apples, -8, 0
+
+-------- day 12 --------
+name, sellIn, quality
+Ornamental vase, -2, 6
+Aged Brie, -10, 0
+Set of teacups, -7, 0
+Diamond ring, -12, 56
+Diamond ring, -13, 56
+Backstage passes to concert, 3, 8
+Backstage passes to concert, -2, 35
+Backstage passes to concert, -7, 30
+Fresh apples, -9, 0
+
+-------- day 13 --------
+name, sellIn, quality
+Ornamental vase, -3, 4
+Aged Brie, -11, 0
+Set of teacups, -8, 0
+Diamond ring, -13, 54
+Diamond ring, -14, 54
+Backstage passes to concert, 2, 7
+Backstage passes to concert, -3, 33
+Backstage passes to concert, -8, 28
+Fresh apples, -10, 0
+
+-------- day 14 --------
+name, sellIn, quality
+Ornamental vase, -4, 2
+Aged Brie, -12, 0
+Set of teacups, -9, 0
+Diamond ring, -14, 52
+Diamond ring, -15, 52
+Backstage passes to concert, 1, 6
+Backstage passes to concert, -4, 31
+Backstage passes to concert, -9, 26
+Fresh apples, -11, 0
+
+-------- day 15 --------
+name, sellIn, quality
+Ornamental vase, -5, 0
+Aged Brie, -13, 0
+Set of teacups, -10, 0
+Diamond ring, -15, 50
+Diamond ring, -16, 50
+Backstage passes to concert, 0, 5
+Backstage passes to concert, -5, 29
+Backstage passes to concert, -10, 24
+Fresh apples, -12, 0
+
+-------- day 16 --------
+name, sellIn, quality
+Ornamental vase, -6, 0
+Aged Brie, -14, 0
+Set of teacups, -11, 0
+Diamond ring, -16, 48
+Diamond ring, -17, 48
+Backstage passes to concert, -1, 3
+Backstage passes to concert, -6, 27
+Backstage passes to concert, -11, 22
+Fresh apples, -13, 0
+
+-------- day 17 --------
+name, sellIn, quality
+Ornamental vase, -7, 0
+Aged Brie, -15, 0
+Set of teacups, -12, 0
+Diamond ring, -17, 46
+Diamond ring, -18, 46
+Backstage passes to concert, -2, 1
+Backstage passes to concert, -7, 25
+Backstage passes to concert, -12, 20
+Fresh apples, -14, 0
+
+-------- day 18 --------
+name, sellIn, quality
+Ornamental vase, -8, 0
+Aged Brie, -16, 0
+Set of teacups, -13, 0
+Diamond ring, -18, 44
+Diamond ring, -19, 44
+Backstage passes to concert, -3, 0
+Backstage passes to concert, -8, 23
+Backstage passes to concert, -13, 18
+Fresh apples, -15, 0
+
+-------- day 19 --------
+name, sellIn, quality
+Ornamental vase, -9, 0
+Aged Brie, -17, 0
+Set of teacups, -14, 0
+Diamond ring, -19, 42
+Diamond ring, -20, 42
+Backstage passes to concert, -4, 0
+Backstage passes to concert, -9, 21
+Backstage passes to concert, -14, 16
+Fresh apples, -16, 0
+
+-------- day 20 --------
+name, sellIn, quality
+Ornamental vase, -10, 0
+Aged Brie, -18, 0
+Set of teacups, -15, 0
+Diamond ring, -20, 40
+Diamond ring, -21, 40
+Backstage passes to concert, -5, 0
+Backstage passes to concert, -10, 19
+Backstage passes to concert, -15, 14
+Fresh apples, -17, 0
+
+-------- day 21 --------
+name, sellIn, quality
+Ornamental vase, -11, 0
+Aged Brie, -19, 0
+Set of teacups, -16, 0
+Diamond ring, -21, 38
+Diamond ring, -22, 38
+Backstage passes to concert, -6, 0
+Backstage passes to concert, -11, 17
+Backstage passes to concert, -16, 12
+Fresh apples, -18, 0
+
+-------- day 22 --------
+name, sellIn, quality
+Ornamental vase, -12, 0
+Aged Brie, -20, 0
+Set of teacups, -17, 0
+Diamond ring, -22, 36
+Diamond ring, -23, 36
+Backstage passes to concert, -7, 0
+Backstage passes to concert, -12, 15
+Backstage passes to concert, -17, 10
+Fresh apples, -19, 0
+
+-------- day 23 --------
+name, sellIn, quality
+Ornamental vase, -13, 0
+Aged Brie, -21, 0
+Set of teacups, -18, 0
+Diamond ring, -23, 34
+Diamond ring, -24, 34
+Backstage passes to concert, -8, 0
+Backstage passes to concert, -13, 13
+Backstage passes to concert, -18, 8
+Fresh apples, -20, 0
+
+-------- day 24 --------
+name, sellIn, quality
+Ornamental vase, -14, 0
+Aged Brie, -22, 0
+Set of teacups, -19, 0
+Diamond ring, -24, 32
+Diamond ring, -25, 32
+Backstage passes to concert, -9, 0
+Backstage passes to concert, -14, 11
+Backstage passes to concert, -19, 6
+Fresh apples, -21, 0
+
+-------- day 25 --------
+name, sellIn, quality
+Ornamental vase, -15, 0
+Aged Brie, -23, 0
+Set of teacups, -20, 0
+Diamond ring, -25, 30
+Diamond ring, -26, 30
+Backstage passes to concert, -10, 0
+Backstage passes to concert, -15, 9
+Backstage passes to concert, -20, 4
+Fresh apples, -22, 0
+
+-------- day 26 --------
+name, sellIn, quality
+Ornamental vase, -16, 0
+Aged Brie, -24, 0
+Set of teacups, -21, 0
+Diamond ring, -26, 28
+Diamond ring, -27, 28
+Backstage passes to concert, -11, 0
+Backstage passes to concert, -16, 7
+Backstage passes to concert, -21, 2
+Fresh apples, -23, 0
+
+-------- day 27 --------
+name, sellIn, quality
+Ornamental vase, -17, 0
+Aged Brie, -25, 0
+Set of teacups, -22, 0
+Diamond ring, -27, 26
+Diamond ring, -28, 26
+Backstage passes to concert, -12, 0
+Backstage passes to concert, -17, 5
+Backstage passes to concert, -22, 0
+Fresh apples, -24, 0
+
+-------- day 28 --------
+name, sellIn, quality
+Ornamental vase, -18, 0
+Aged Brie, -26, 0
+Set of teacups, -23, 0
+Diamond ring, -28, 24
+Diamond ring, -29, 24
+Backstage passes to concert, -13, 0
+Backstage passes to concert, -18, 3
+Backstage passes to concert, -23, 0
+Fresh apples, -25, 0
+
+-------- day 29 --------
+name, sellIn, quality
+Ornamental vase, -19, 0
+Aged Brie, -27, 0
+Set of teacups, -24, 0
+Diamond ring, -29, 22
+Diamond ring, -30, 22
+Backstage passes to concert, -14, 0
+Backstage passes to concert, -19, 1
+Backstage passes to concert, -24, 0
+Fresh apples, -26, 0
+
+-------- day 30 --------
+name, sellIn, quality
+Ornamental vase, -20, 0
+Aged Brie, -28, 0
+Set of teacups, -25, 0
+Diamond ring, -30, 20
+Diamond ring, -31, 20
+Backstage passes to concert, -15, 0
+Backstage passes to concert, -20, 0
+Backstage passes to concert, -25, 0
+Fresh apples, -27, 0
+

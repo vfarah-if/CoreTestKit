@@ -10,9 +10,15 @@ public partial class Store
     }
     public void UpdateQuality()
     {
+        var itemUpdaters = new Dictionary<string, IItemUpdater>()
+        {
+            // Default strategy with nothing should pass
+        };
         foreach (var item in _items)
         {
-            UpdateItem(item);
+            var updater = itemUpdaters.TryGetValue(item.Name, out var itemUpdater) ? itemUpdater: new DefaultItemUpdater();
+            updater.Update(item);
+            // UpdateItem(item);
         }
     }
 
