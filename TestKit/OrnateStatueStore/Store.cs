@@ -1,3 +1,5 @@
+using OrnateStatueStore.ItemUpdaters;
+
 namespace OrnateStatueStore;
 
 public partial class Store

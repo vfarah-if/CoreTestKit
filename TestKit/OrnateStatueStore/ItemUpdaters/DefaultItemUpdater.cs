@@ -1,4 +1,4 @@
-namespace OrnateStatueStore;
+namespace OrnateStatueStore.ItemUpdaters;
 
 public class DefaultItemUpdater : IItemUpdater
 {
