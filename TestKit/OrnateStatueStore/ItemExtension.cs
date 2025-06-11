@@ -7,7 +7,7 @@ public static class ItemExtension
         item.Quality = Math.Min(50, item.Quality + amount);
     }
 
-    public static void DecreaseSellInByADay(this Item item)
+    public static void ReduceSellInByADay(this Item item)
     {
         item.SellIn -= 1;
     }

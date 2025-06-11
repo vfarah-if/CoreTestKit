@@ -20,7 +20,7 @@ public partial class Store
     {
         if (item.Name == "Diamond ring") return;
         UpdateQualityBeforeSellInChanges(item);
-        item.DecreaseSellInByADay();
+        item.ReduceSellInByADay();
         UpdateQualityAfterSellInExpires(item);
     }
 
@@ -111,10 +111,5 @@ public partial class Store
         {
             item.IncreaseQuality();
         }
-    }
-
-    public partial interface IItemUpdater
-    {
-        public void UpdateQuality();
     }
 }
