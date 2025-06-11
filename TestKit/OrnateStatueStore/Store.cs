@@ -30,7 +30,7 @@ public class Store
 
     private static void UpdateQualityAfterSellInChange(Item item)
     {
-        if (item.SellIn >= 0) return;
+        if (item.SellIn >= 0 || item.Name == "Diamond ring") return;
         if (item.Name == "Aged Brie")
         {
             IncreaseQuality(item);
@@ -38,15 +38,10 @@ public class Store
         }
         if (item.Name != "Backstage passes to concert")
         {
-            if (item.Name != "Diamond ring")
-            {
-                ReduceQuality(item);
-            }
+            ReduceQuality(item);
+            return;
         }
-        else
-        {
-            ReduceQuality(item, item.Quality);
-        }
+        ReduceQuality(item, item.Quality);
     }
 
     private static void UpdateQualityBeforeSellInChanges(Item item)
