@@ -72,11 +72,6 @@ public partial class Store
     //     }
     // }
 
-    private static void UpdateExpiredFreshApples(Item item)
-    {
-        item.ReduceQuality(2);
-    }
-
     private static void UpdateExpiredConcert(Item item)
     {
         item.Quality = 0;
@@ -90,11 +85,6 @@ public partial class Store
     private static void UpdateDefault(Item item)
     {
         item.ReduceQuality();
-    }
-
-    private static void UpdateFreshApples(Item item)
-    {
-        item.ReduceQuality(2);
     }
 
     private static void UpdateAgedBrie(Item item)
