@@ -36,12 +36,9 @@ public class Store
             {
                 if (item.Name != "Backstage passes to concert")
                 {
-                    if (item.Quality > 0)
+                    if (item.Name != "Diamond ring")
                     {
-                        if (item.Name != "Diamond ring")
-                        {
-                            ReduceQuality(item);
-                        }
+                        ReduceQuality(item);
                     }
                 }
                 else
@@ -63,12 +60,9 @@ public class Store
     {
         if (item.Name != "Aged Brie" && item.Name != "Backstage passes to concert")
         {
-            if (item.Quality > 0)
+            if (item.Name != "Diamond ring")
             {
-                if (item.Name != "Diamond ring")
-                {
-                    ReduceQuality(item);
-                }
+                ReduceQuality(item);
             }
         }
         else
@@ -101,7 +95,10 @@ public class Store
 
     private static void ReduceQuality(Item item, int amount = 1)
     {
-        item.Quality -= amount;
+        if (item.Quality > 0)
+        {
+            item.Quality -= amount;
+        }
     }
 
     private static void IncreaseQuality(Item item, int amount = 1)
