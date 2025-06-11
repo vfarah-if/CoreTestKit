@@ -12,11 +12,11 @@ public partial class Store
     {
         var itemUpdaters = new Dictionary<string, IItemUpdater>()
         {
-            // Default strategy with nothing should pass
+            ["Aged Brie"] = new AgedBrieUpdater(),
         };
         foreach (var item in _items)
         {
-            var updater = itemUpdaters.TryGetValue(item.Name, out var itemUpdater) ? itemUpdater: new DefaultItemUpdater();
+            var updater = itemUpdaters.TryGetValue(item.Name, out var itemUpdater) ? itemUpdater : new DefaultItemUpdater();
             updater.Update(item);
             // UpdateItem(item);
         }
@@ -117,5 +117,9 @@ public partial class Store
         {
             item.IncreaseQuality();
         }
+    }
+
+    partial class AgedBrieUpdater : IItemUpdater
+    {
     }
 }
