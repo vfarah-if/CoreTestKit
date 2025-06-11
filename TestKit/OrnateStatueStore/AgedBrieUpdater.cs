@@ -11,4 +11,14 @@ public partial class Store
             if (item.SellIn < 0) UpdatedAgedBrieWhenExpired(item);
         }
     }
+
+    private static void UpdatedAgedBrieWhenExpired(Item item)
+    {
+        item.IncreaseQuality();
+    }
+
+    private static void UpdateAgedBrie(Item item)
+    {
+        item.IncreaseQuality();
+    }
 }

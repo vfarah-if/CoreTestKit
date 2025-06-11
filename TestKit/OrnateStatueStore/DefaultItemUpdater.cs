@@ -19,4 +19,9 @@ public partial class Store
     {
         item.ReduceQuality();
     }
+
+    private static void UpdateDefault(Item item)
+    {
+        item.ReduceQuality();
+    }
 }

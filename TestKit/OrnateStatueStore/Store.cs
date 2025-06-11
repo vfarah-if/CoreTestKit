@@ -71,39 +71,4 @@ public partial class Store
     //             return;
     //     }
     // }
-
-    private static void UpdateExpiredConcert(Item item)
-    {
-        item.Quality = 0;
-    }
-
-    private static void UpdatedAgedBrieWhenExpired(Item item)
-    {
-        item.IncreaseQuality();
-    }
-
-    private static void UpdateDefault(Item item)
-    {
-        item.ReduceQuality();
-    }
-
-    private static void UpdateAgedBrie(Item item)
-    {
-        item.IncreaseQuality();
-    }
-
-    private static void UpdateBackstagePassesQuality(Item item)
-    {
-        item.IncreaseQuality();
-
-        if (item.SellIn < 11)
-        {
-            item.IncreaseQuality();
-        }
-
-        if (item.SellIn < 6)
-        {
-            item.IncreaseQuality();
-        }
-    }
 }
