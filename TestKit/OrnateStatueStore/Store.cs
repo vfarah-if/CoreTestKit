@@ -13,6 +13,7 @@ public partial class Store
         var itemUpdaters = new Dictionary<string, IItemUpdater>()
         {
             ["Aged Brie"] = new AgedBrieUpdater(),
+            ["Backstage passes to concert"] = new BackstagePassesUpdater(),
         };
         foreach (var item in _items)
         {
@@ -22,32 +23,32 @@ public partial class Store
         }
     }
 
-    private static void UpdateItem(Item item)
-    {
-        if (item.Name == "Diamond ring") return;
-        UpdateQualityBeforeSellInChanges(item);
-        item.ReduceSellInByADay();
-        UpdateQualityAfterSellInExpires(item);
-    }
+    // private static void UpdateItem(Item item)
+    // {
+    //     if (item.Name == "Diamond ring") return;
+    //     UpdateQualityBeforeSellInChanges(item);
+    //     item.ReduceSellInByADay();
+    //     UpdateQualityAfterSellInExpires(item);
+    // }
 
-    private static void UpdateQualityBeforeSellInChanges(Item item)
-    {
-        switch (item.Name)
-        {
-            case "Aged Brie":
-                UpdateAgedBrie(item);
-                break;
-            case "Backstage passes to concert":
-                UpdateBackstagePassesQuality(item);
-                break;
-            case "Fresh apples":
-                UpdateFreshApples(item);
-                break;
-            default:
-                UpdateDefault(item);
-                break;
-        }
-    }
+    // private static void UpdateQualityBeforeSellInChanges(Item item)
+    // {
+    //     switch (item.Name)
+    //     {
+    //         case "Aged Brie":
+    //             UpdateAgedBrie(item);
+    //             break;
+    //         case "Backstage passes to concert":
+    //             UpdateBackstagePassesQuality(item);
+    //             break;
+    //         case "Fresh apples":
+    //             UpdateFreshApples(item);
+    //             break;
+    //         default:
+    //             UpdateDefault(item);
+    //             break;
+    //     }
+    // }
 
     private static void UpdateQualityAfterSellInExpires(Item item)
     {
@@ -118,8 +119,5 @@ public partial class Store
             item.IncreaseQuality();
         }
     }
-
-    partial class AgedBrieUpdater : IItemUpdater
-    {
-    }
+    
 }

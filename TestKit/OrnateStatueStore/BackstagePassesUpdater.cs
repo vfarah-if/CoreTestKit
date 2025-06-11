@@ -2,13 +2,13 @@ namespace OrnateStatueStore;
 
 public partial class Store
 {
-    private class AgedBrieUpdater : IItemUpdater
+    public class BackstagePassesUpdater: IItemUpdater
     {
         public void Update(Item item)
         {
-            UpdateAgedBrie(item);
+            UpdateBackstagePassesQuality(item);
             item.ReduceSellInByADay();
-            if (item.SellIn < 0) UpdatedAgedBrieWhenExpired(item);
+            if (item.SellIn < 0) UpdateExpiredConcert(item);
         }
     }
 }

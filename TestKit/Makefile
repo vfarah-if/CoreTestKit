@@ -1,4 +1,4 @@
-.PHONY: all clean build test clean check add
+.PHONY: all clean build test clean check add amend
 
 all: clean restore build
 
@@ -21,3 +21,6 @@ add:
 	git add .
 
 check: test format add	
+
+amend:
+	git commit --amend
