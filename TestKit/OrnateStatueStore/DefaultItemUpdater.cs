@@ -14,4 +14,9 @@ public partial class Store
             }
         }
     }
+
+    private static void UpdateDefaultExpiredItem(Item item)
+    {
+        item.ReduceQuality();
+    }
 }
