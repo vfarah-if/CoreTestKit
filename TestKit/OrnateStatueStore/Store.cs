@@ -31,7 +31,11 @@ public class Store
     private static void UpdateQualityAfterSellInChange(Item item)
     {
         if (item.SellIn >= 0) return;
-        if (item.Name != "Aged Brie")
+        if (item.Name == "Aged Brie")
+        {
+            IncreaseQuality(item);
+        }
+        else
         {
             if (item.Name != "Backstage passes to concert")
             {
@@ -44,10 +48,6 @@ public class Store
             {
                 ReduceQuality(item, item.Quality);
             }
-        }
-        else
-        {
-            IncreaseQuality(item);
         }
     }
 
