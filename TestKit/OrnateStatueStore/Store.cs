@@ -40,7 +40,7 @@ public class Store
                     {
                         if (item.Name != "Diamond ring")
                         {
-                            item.Quality -= 1;
+                            ReduceQuality(item);
                         }
                     }
                 }
@@ -58,7 +58,6 @@ public class Store
             }
         }
     }
-
     private static void UpdateQualityBeforeSellInChanges(Item item)
     {
         if (item.Name != "Aged Brie" && item.Name != "Backstage passes to concert")
@@ -67,7 +66,7 @@ public class Store
             {
                 if (item.Name != "Diamond ring")
                 {
-                    item.Quality -= 1;
+                    ReduceQuality(item);
                 }
             }
         }
@@ -97,5 +96,10 @@ public class Store
                 }
             }
         }
+    }
+
+    private static void ReduceQuality(Item item, int amount = 1)
+    {
+        item.Quality -= amount;
     }
 }
