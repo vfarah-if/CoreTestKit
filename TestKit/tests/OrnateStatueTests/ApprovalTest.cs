@@ -8,23 +8,11 @@ public class ApprovalTest
     [Fact]
     public Task ThirtyDays()
     {
-        var fakeoutput = new StringBuilder();
-        Console.SetOut(new StringWriter(fakeoutput));
+        var builder = new StringBuilder();
+        Console.SetOut(new StringWriter(builder));
 
         Program.Main(["30"]);
-        var output = fakeoutput.ToString();
-
-        return Verify(output);
-    }
-
-    [Fact(Skip = "Not yet implemented")]
-    public Task ThirtyDaysV2()
-    {
-        var fakeoutput = new StringBuilder();
-        Console.SetOut(new StringWriter(fakeoutput));
-
-        Program.Main(["30"]);
-        var output = fakeoutput.ToString();
+        var output = builder.ToString();
 
         return Verify(output);
     }
