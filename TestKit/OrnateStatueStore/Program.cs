@@ -6,7 +6,37 @@ public class Program
     {
         Console.WriteLine("Welcome to the store!");
 
-        var items = new List<Item>
+        var items = FetchData();
+        var store = new Store(items);
+        var days = ParseOrDefault(args);
+
+        GetStorePrices(days, items, store);
+    }
+
+    private static int ParseOrDefault(string[] args)
+    {
+        var days = args.Length > 0 ? int.Parse(args[0]) + 1 : 2;
+        return days;
+    }
+
+    private static void GetStorePrices(int days, List<Item> items, Store store)
+    {
+        for (var i = 0; i < days; i++)
+        {
+            Console.WriteLine("-------- day " + i + " --------");
+            Console.WriteLine("name, sellIn, quality");
+            foreach (var item in items)
+            {
+                Console.WriteLine(item.Name + ", " + item.SellIn + ", " + item.Quality);
+            }
+            Console.WriteLine("");
+            store.UpdateQuality();
+        }
+    }
+
+    private static List<Item> FetchData()
+    {
+        return new List<Item>
         {
             new (){Name = "Ornamental vase", SellIn = 10, Quality = 20},
             new (){Name = "Aged Brie", SellIn = 2, Quality = 0},
@@ -38,20 +68,5 @@ public class Program
                 Quality = 17
             }
         };
-
-        var store = new Store(items);
-        var days = args.Length > 0 ? int.Parse(args[0]) + 1 : 2;
-
-        for (var i = 0; i < days; i++)
-        {
-            Console.WriteLine("-------- day " + i + " --------");
-            Console.WriteLine("name, sellIn, quality");
-            for (var j = 0; j < items.Count; j++)
-            {
-                Console.WriteLine(items[j].Name + ", " + items[j].SellIn + ", " + items[j].Quality);
-            }
-            Console.WriteLine("");
-            store.UpdateQuality();
-        }
     }
 }

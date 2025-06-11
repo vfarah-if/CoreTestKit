@@ -1,6 +1,6 @@
 namespace OrnateStatueStore.ItemUpdaters;
 
-public class DiamondRingUpdater : IItemUpdater
+public class DiamondRingItemUpdater : IItemUpdater
 {
     public void Update(Item item)
     {

@@ -1,6 +1,6 @@
 namespace OrnateStatueStore.ItemUpdaters;
 
-public class BackstagePassesUpdater : IItemUpdater
+public class BackstagePassesItemUpdater : IItemUpdater
 {
     public void Update(Item item)
     {

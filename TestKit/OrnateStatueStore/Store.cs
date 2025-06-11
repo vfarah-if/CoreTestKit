@@ -7,10 +7,10 @@ public partial class Store
     private readonly IList<Item> _items;
     private readonly Dictionary<string, IItemUpdater> _itemUpdaters = new()
     {
-        ["Aged Brie"] = new AgedBrieUpdater(),
-        ["Backstage passes to concert"] = new BackstagePassesUpdater(),
-        ["Fresh apples"] = new FreshApplesUpdater(),
-        ["Diamond ring"] = new DiamondRingUpdater(),
+        ["Aged Brie"] = new AgedBrieItemUpdater(),
+        ["Backstage passes to concert"] = new BackstagePassesItemUpdater(),
+        ["Fresh apples"] = new FreshApplesItemsUpdater(),
+        ["Diamond ring"] = new DiamondRingItemUpdater(),
     };
 
     public Store(IList<Item> items)

@@ -1,6 +1,6 @@
 namespace OrnateStatueStore.ItemUpdaters;
 
-public class AgedBrieUpdater : IItemUpdater
+public class AgedBrieItemUpdater : IItemUpdater
 {
     public void Update(Item item)
     {
