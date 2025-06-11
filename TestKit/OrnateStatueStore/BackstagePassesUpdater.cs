@@ -2,7 +2,7 @@ namespace OrnateStatueStore;
 
 public partial class Store
 {
-    public class BackstagePassesUpdater: IItemUpdater
+    public class BackstagePassesUpdater : IItemUpdater
     {
         public void Update(Item item)
         {

@@ -14,6 +14,7 @@ public partial class Store
         {
             ["Aged Brie"] = new AgedBrieUpdater(),
             ["Backstage passes to concert"] = new BackstagePassesUpdater(),
+            ["Fresh apples"] = new FreshApplesUpdater()
         };
         foreach (var item in _items)
         {
@@ -119,5 +120,4 @@ public partial class Store
             item.IncreaseQuality();
         }
     }
-    
 }

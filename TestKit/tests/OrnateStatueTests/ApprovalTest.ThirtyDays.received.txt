@@ -21,7 +21,7 @@ Diamond ring, -2, 78
 Backstage passes to concert, 14, 21
 Backstage passes to concert, 9, 50
 Backstage passes to concert, 4, 50
-Fresh apples, 2, 16
+Fresh apples, 2, 15
 
 -------- day 2 --------
 name, sellIn, quality
@@ -33,7 +33,7 @@ Diamond ring, -3, 76
 Backstage passes to concert, 13, 22
 Backstage passes to concert, 8, 50
 Backstage passes to concert, 3, 50
-Fresh apples, 1, 15
+Fresh apples, 1, 13
 
 -------- day 3 --------
 name, sellIn, quality
@@ -45,7 +45,7 @@ Diamond ring, -4, 74
 Backstage passes to concert, 12, 23
 Backstage passes to concert, 7, 50
 Backstage passes to concert, 2, 50
-Fresh apples, 0, 14
+Fresh apples, 0, 11
 
 -------- day 4 --------
 name, sellIn, quality
@@ -57,7 +57,7 @@ Diamond ring, -5, 72
 Backstage passes to concert, 11, 24
 Backstage passes to concert, 6, 50
 Backstage passes to concert, 1, 50
-Fresh apples, -1, 12
+Fresh apples, -1, 7
 
 -------- day 5 --------
 name, sellIn, quality
@@ -69,7 +69,7 @@ Diamond ring, -6, 70
 Backstage passes to concert, 10, 25
 Backstage passes to concert, 5, 50
 Backstage passes to concert, 0, 50
-Fresh apples, -2, 10
+Fresh apples, -2, 3
 
 -------- day 6 --------
 name, sellIn, quality
@@ -81,7 +81,7 @@ Diamond ring, -7, 68
 Backstage passes to concert, 9, 27
 Backstage passes to concert, 4, 50
 Backstage passes to concert, -1, 0
-Fresh apples, -3, 8
+Fresh apples, -3, 0
 
 -------- day 7 --------
 name, sellIn, quality
@@ -93,7 +93,7 @@ Diamond ring, -8, 66
 Backstage passes to concert, 8, 29
 Backstage passes to concert, 3, 50
 Backstage passes to concert, -2, 0
-Fresh apples, -4, 6
+Fresh apples, -4, 0
 
 -------- day 8 --------
 name, sellIn, quality
@@ -105,7 +105,7 @@ Diamond ring, -9, 64
 Backstage passes to concert, 7, 31
 Backstage passes to concert, 2, 50
 Backstage passes to concert, -3, 0
-Fresh apples, -5, 4
+Fresh apples, -5, 0
 
 -------- day 9 --------
 name, sellIn, quality
@@ -117,7 +117,7 @@ Diamond ring, -10, 62
 Backstage passes to concert, 6, 33
 Backstage passes to concert, 1, 50
 Backstage passes to concert, -4, 0
-Fresh apples, -6, 2
+Fresh apples, -6, 0
 
 -------- day 10 --------
 name, sellIn, quality
