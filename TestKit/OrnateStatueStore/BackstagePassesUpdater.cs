@@ -1,15 +1,12 @@
 namespace OrnateStatueStore;
 
-public partial class Store
+public class BackstagePassesUpdater : IItemUpdater
 {
-    public class BackstagePassesUpdater : IItemUpdater
+    public void Update(Item item)
     {
-        public void Update(Item item)
-        {
-            UpdateBackstagePassesQuality(item);
-            item.ReduceSellInByADay();
-            if (item.SellIn < 0) UpdateExpiredConcert(item);
-        }
+        UpdateBackstagePassesQuality(item);
+        item.ReduceSellInByADay();
+        if (item.SellIn < 0) UpdateExpiredConcert(item);
     }
 
     private static void UpdateExpiredConcert(Item item)
@@ -19,16 +16,21 @@ public partial class Store
 
     private static void UpdateBackstagePassesQuality(Item item)
     {
-        item.IncreaseQuality();
-
-        if (item.SellIn < 11)
+        switch (item.SellIn)
         {
-            item.IncreaseQuality();
-        }
-
-        if (item.SellIn < 6)
-        {
-            item.IncreaseQuality();
+            case > 10:
+                item.IncreaseQuality();
+                break;
+            case > 5:
+                item.IncreaseQuality(2);
+                break;
+            case > 0:
+                item.IncreaseQuality(3);
+                break;
+            default:
+                item.Quality = 0;
+                break;
         }
     }
 }
+

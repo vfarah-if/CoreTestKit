@@ -1,12 +1,9 @@
 namespace OrnateStatueStore;
 
-public partial class Store
+public class DiamondRingUpdater : IItemUpdater
 {
-    public class DiamondRingUpdater : IItemUpdater
+    public void Update(Item item)
     {
-        public void Update(Item item)
-        {
-            item.Quality = 80;
-        }
+        item.Quality = 80;
     }
 }

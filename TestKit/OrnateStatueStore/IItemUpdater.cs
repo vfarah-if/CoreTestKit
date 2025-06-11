@@ -1,9 +1,6 @@
 namespace OrnateStatueStore;
 
-public partial class Store
+public interface IItemUpdater
 {
-    public interface IItemUpdater
-    {
-        public void Update(Item item);
-    }
+    public void Update(Item item);
 }

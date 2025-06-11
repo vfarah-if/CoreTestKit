@@ -1,20 +1,12 @@
 namespace OrnateStatueStore;
 
-public partial class Store
+public class AgedBrieUpdater : IItemUpdater
 {
-    private class AgedBrieUpdater : IItemUpdater
+    public void Update(Item item)
     {
-        public void Update(Item item)
-        {
-            UpdateAgedBrie(item);
-            item.ReduceSellInByADay();
-            if (item.SellIn < 0) UpdatedAgedBrieWhenExpired(item);
-        }
-    }
-
-    private static void UpdatedAgedBrieWhenExpired(Item item)
-    {
-        item.IncreaseQuality();
+        UpdateAgedBrie(item);
+        item.ReduceSellInByADay();
+        if (item.SellIn < 0) UpdateAgedBrie(item);
     }
 
     private static void UpdateAgedBrie(Item item)
