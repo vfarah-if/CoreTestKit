@@ -14,7 +14,8 @@ public partial class Store
         {
             ["Aged Brie"] = new AgedBrieUpdater(),
             ["Backstage passes to concert"] = new BackstagePassesUpdater(),
-            ["Fresh apples"] = new FreshApplesUpdater()
+            ["Fresh apples"] = new FreshApplesUpdater(),
+            ["Diamond ring"] = new DiamondRingUpdater(),
         };
         foreach (var item in _items)
         {
@@ -51,25 +52,25 @@ public partial class Store
     //     }
     // }
 
-    private static void UpdateQualityAfterSellInExpires(Item item)
-    {
-        if (item.SellIn >= 0) return;
-        switch (item.Name)
-        {
-            case "Aged Brie":
-                UpdatedAgedBrieWhenExpired(item);
-                return;
-            case "Backstage passes to concert":
-                UpdateExpiredConcert(item);
-                break;
-            case "Fresh apples":
-                UpdateExpiredFreshApples(item);
-                break;
-            default:
-                UpdateDefaultExpiredItem(item);
-                return;
-        }
-    }
+    // private static void UpdateQualityAfterSellInExpires(Item item)
+    // {
+    //     if (item.SellIn >= 0) return;
+    //     switch (item.Name)
+    //     {
+    //         case "Aged Brie":
+    //             UpdatedAgedBrieWhenExpired(item);
+    //             return;
+    //         case "Backstage passes to concert":
+    //             UpdateExpiredConcert(item);
+    //             break;
+    //         case "Fresh apples":
+    //             UpdateExpiredFreshApples(item);
+    //             break;
+    //         default:
+    //             UpdateDefaultExpiredItem(item);
+    //             return;
+    //     }
+    // }
 
     private static void UpdateDefaultExpiredItem(Item item)
     {
