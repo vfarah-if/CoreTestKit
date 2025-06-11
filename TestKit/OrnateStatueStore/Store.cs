@@ -24,11 +24,6 @@ public class Store
         UpdateQualityAfterSellInChanges(item);
     }
 
-    private static void DecreaseSellInByADay(Item item)
-    {
-        item.SellIn -= 1;
-    }
-
     private static void UpdateQualityAfterSellInChanges(Item item)
     {
         if (item.SellIn >= 0) return;
@@ -53,24 +48,26 @@ public class Store
                 IncreaseQuality(item);
                 break;
             case "Backstage passes to concert":
-                {
-                    IncreaseQuality(item);
-
-                    if (item.SellIn < 11)
-                    {
-                        IncreaseQuality(item);
-                    }
-
-                    if (item.SellIn < 6)
-                    {
-                        IncreaseQuality(item);
-                    }
-
-                    break;
-                }
+                UpdateBackstagePassesQuality(item);
+                break;
             default:
                 ReduceQuality(item);
                 break;
+        }
+    }
+
+    private static void UpdateBackstagePassesQuality(Item item)
+    {
+        IncreaseQuality(item);
+
+        if (item.SellIn < 11)
+        {
+            IncreaseQuality(item);
+        }
+
+        if (item.SellIn < 6)
+        {
+            IncreaseQuality(item);
         }
     }
 
@@ -88,5 +85,10 @@ public class Store
         {
             item.Quality += amount;
         }
+    }
+
+    private static void DecreaseSellInByADay(Item item)
+    {
+        item.SellIn -= 1;
     }
 }
