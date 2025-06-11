@@ -34,20 +34,18 @@ public class Store
         if (item.Name == "Aged Brie")
         {
             IncreaseQuality(item);
+            return;
+        }
+        if (item.Name != "Backstage passes to concert")
+        {
+            if (item.Name != "Diamond ring")
+            {
+                ReduceQuality(item);
+            }
         }
         else
         {
-            if (item.Name != "Backstage passes to concert")
-            {
-                if (item.Name != "Diamond ring")
-                {
-                    ReduceQuality(item);
-                }
-            }
-            else
-            {
-                ReduceQuality(item, item.Quality);
-            }
+            ReduceQuality(item, item.Quality);
         }
     }
 
