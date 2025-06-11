@@ -15,9 +15,9 @@ public class ProgramExtensionsShould
         _services
             .AddLogging()
             .AddApplicationCommands()
-            .AddRootCommand();   
+            .AddRootCommand();
     }
-    
+
     [Fact]
     public void RegisterRootCommandWithCalculatorCommand()
     {
@@ -26,7 +26,7 @@ public class ProgramExtensionsShould
         Assert.NotNull(rootCommand);
         Assert.Contains(rootCommand.Children, symbol => symbol.Name == "add");
     }
-    
+
     [Fact]
     public async Task ExecuteCalculatorCommand_ReturnsExpectedExitCode()
     {

@@ -1,4 +1,4 @@
-.PHONY: all clean build test clean check add amend
+.PHONY: all clean build test clean
 
 all: clean restore build
 
@@ -17,10 +17,7 @@ test:
 format:
 	dotnet format
 
-add:
+check:
+	dotnet test
+	dotnet format
 	git add .
-
-check: test format add	
-
-amend:
-	git commit --amend
