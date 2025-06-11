@@ -42,26 +42,31 @@ public class Store
 
     private static void UpdateQualityBeforeSellInChanges(Item item)
     {
-        if (item.Name == "Aged Brie" || item.Name == "Backstage passes to concert")
+        switch (item.Name)
         {
-            IncreaseQuality(item);
-
-            if (item.Name == "Backstage passes to concert")
-            {
-                if (item.SellIn < 11)
+            case "Aged Brie":
+            case "Backstage passes to concert":
                 {
                     IncreaseQuality(item);
-                }
 
-                if (item.SellIn < 6)
-                {
-                    IncreaseQuality(item);
+                    if (item.Name == "Backstage passes to concert")
+                    {
+                        if (item.SellIn < 11)
+                        {
+                            IncreaseQuality(item);
+                        }
+
+                        if (item.SellIn < 6)
+                        {
+                            IncreaseQuality(item);
+                        }
+                    }
+
+                    break;
                 }
-            }
-        }
-        else
-        {
-            ReduceQuality(item);
+            default:
+                ReduceQuality(item);
+                break;
         }
     }
 
