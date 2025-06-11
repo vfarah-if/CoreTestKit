@@ -31,8 +31,12 @@ public class Program
                 SellIn = 5,
                 Quality = 49
             },
-            // this Fresh apples does not work properly yet
-            //new Item {Name = "Fresh apples", SellIn = 3, Quality = 17}
+            new()
+            {
+                Name = "Fresh apples",
+                SellIn = 3,
+                Quality = 17
+            }
         };
 
         var store = new Store(items);

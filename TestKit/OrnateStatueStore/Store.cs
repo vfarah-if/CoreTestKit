@@ -20,7 +20,7 @@ public class Store
     {
         if (item.Name == "Diamond ring") return;
         UpdateQualityBeforeSellInChanges(item);
-        DecreaseSellInByADay(item);
+        item.DecreaseSellInByADay();
         UpdateQualityAfterSellInExpires(item);
     }
 
@@ -30,13 +30,16 @@ public class Store
         switch (item.Name)
         {
             case "Aged Brie":
-                IncreaseQuality(item);
+                item.IncreaseQuality();
                 return;
             case "Backstage passes to concert":
                 item.Quality = 0;
                 break;
+            case "Fresh apples":
+                item.ReduceQuality(2);
+                break;
             default:
-                ReduceQuality(item);
+                item.ReduceQuality();
                 return;
         }
     }
@@ -46,50 +49,32 @@ public class Store
         switch (item.Name)
         {
             case "Aged Brie":
-                IncreaseQuality(item);
+                item.IncreaseQuality();
                 break;
             case "Backstage passes to concert":
                 UpdateBackstagePassesQuality(item);
                 break;
+            case "Fresh apples":
+                item.ReduceQuality(2);
+                break;
             default:
-                ReduceQuality(item);
+                item.ReduceQuality();
                 break;
         }
     }
 
     private static void UpdateBackstagePassesQuality(Item item)
     {
-        IncreaseQuality(item);
+        item.IncreaseQuality();
 
         if (item.SellIn < 11)
         {
-            IncreaseQuality(item);
+            item.IncreaseQuality();
         }
 
         if (item.SellIn < 6)
         {
-            IncreaseQuality(item);
+            item.IncreaseQuality();
         }
-    }
-
-    private static void ReduceQuality(Item item, int amount = 1)
-    {
-        if (item.Quality > 0)
-        {
-            item.Quality -= amount;
-        }
-    }
-
-    private static void IncreaseQuality(Item item, int amount = 1)
-    {
-        if (item.Quality < 50)
-        {
-            item.Quality += amount;
-        }
-    }
-
-    private static void DecreaseSellInByADay(Item item)
-    {
-        item.SellIn -= 1;
     }
 }
