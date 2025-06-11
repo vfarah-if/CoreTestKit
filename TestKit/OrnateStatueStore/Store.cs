@@ -18,19 +18,15 @@ public class Store
 
     private static void UpdateItem(Item item)
     {
+        if (item.Name == "Diamond ring") return;
         UpdateQualityBeforeSellInChanges(item);
-
-        if (item.Name != "Diamond ring")
-        {
-            item.SellIn -= 1;
-        }
-
+        item.SellIn -= 1;
         UpdateQualityAfterSellInChange(item);
     }
 
     private static void UpdateQualityAfterSellInChange(Item item)
     {
-        if (item.SellIn >= 0 || item.Name == "Diamond ring") return;
+        if (item.SellIn >= 0) return;
         if (item.Name == "Aged Brie")
         {
             IncreaseQuality(item);
@@ -46,12 +42,7 @@ public class Store
 
     private static void UpdateQualityBeforeSellInChanges(Item item)
     {
-        if (item.Name == "Diamond ring") return;
-        if (item.Name != "Aged Brie" && item.Name != "Backstage passes to concert")
-        {
-            ReduceQuality(item);
-        }
-        else
+        if (item.Name == "Aged Brie" || item.Name == "Backstage passes to concert")
         {
             IncreaseQuality(item);
 
@@ -67,6 +58,10 @@ public class Store
                     IncreaseQuality(item);
                 }
             }
+        }
+        else
+        {
+            ReduceQuality(item);
         }
     }
 
