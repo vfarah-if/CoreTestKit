@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System.Text;
 
 namespace OrnateStatueTests;

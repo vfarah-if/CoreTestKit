@@ -33,11 +33,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="ApprovalTest.ThirtyDaysV2.verified.txt">
-      <ParentFile>$([System.String]::Copy('%(FileName)').Split('.')[0].Split('(')[0])</ParentFile>
-      <DependentUpon>%(ParentFile).cs</DependentUpon>
-    </None>
-  </ItemGroup>
-
 </Project>

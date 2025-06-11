@@ -1,6 +1,6 @@
 namespace OrnateStatueStore;
 
-public class Store
+public partial class Store
 {
     private readonly IList<Item> _items;
 
@@ -111,5 +111,10 @@ public class Store
         {
             item.IncreaseQuality();
         }
+    }
+
+    public partial interface IItemUpdater
+    {
+        public void UpdateQuality();
     }
 }
