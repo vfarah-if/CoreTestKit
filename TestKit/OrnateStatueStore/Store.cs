@@ -21,23 +21,24 @@ public class Store
         if (item.Name == "Diamond ring") return;
         UpdateQualityBeforeSellInChanges(item);
         DecreaseSellInByADay(item);
-        UpdateQualityAfterSellInChanges(item);
+        UpdateQualityAfterSellInExpires(item);
     }
 
-    private static void UpdateQualityAfterSellInChanges(Item item)
+    private static void UpdateQualityAfterSellInExpires(Item item)
     {
         if (item.SellIn >= 0) return;
-        if (item.Name == "Aged Brie")
+        switch (item.Name)
         {
-            IncreaseQuality(item);
-            return;
+            case "Aged Brie":
+                IncreaseQuality(item);
+                return;
+            case "Backstage passes to concert":
+                item.Quality = 0;
+                break;
+            default:
+                ReduceQuality(item);
+                return;
         }
-        if (item.Name != "Backstage passes to concert")
-        {
-            ReduceQuality(item);
-            return;
-        }
-        ReduceQuality(item, item.Quality);
     }
 
     private static void UpdateQualityBeforeSellInChanges(Item item)
