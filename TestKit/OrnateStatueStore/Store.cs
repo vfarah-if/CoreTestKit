@@ -46,12 +46,10 @@ public class Store
 
     private static void UpdateQualityBeforeSellInChanges(Item item)
     {
+        if (item.Name == "Diamond ring") return;
         if (item.Name != "Aged Brie" && item.Name != "Backstage passes to concert")
         {
-            if (item.Name != "Diamond ring")
-            {
-                ReduceQuality(item);
-            }
+            ReduceQuality(item);
         }
         else
         {
