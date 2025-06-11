@@ -48,10 +48,7 @@ public class Store
             }
             else
             {
-                if (item.Quality < 50)
-                {
-                    IncreaseQuality(item);
-                }
+                IncreaseQuality(item);
             }
         }
     }
@@ -67,27 +64,18 @@ public class Store
         }
         else
         {
-            if (item.Quality < 50)
+            IncreaseQuality(item);
+
+            if (item.Name == "Backstage passes to concert")
             {
-                IncreaseQuality(item);
-
-                if (item.Name == "Backstage passes to concert")
+                if (item.SellIn < 11)
                 {
-                    if (item.SellIn < 11)
-                    {
-                        if (item.Quality < 50)
-                        {
-                            IncreaseQuality(item);
-                        }
-                    }
+                    IncreaseQuality(item);
+                }
 
-                    if (item.SellIn < 6)
-                    {
-                        if (item.Quality < 50)
-                        {
-                            IncreaseQuality(item);
-                        }
-                    }
+                if (item.SellIn < 6)
+                {
+                    IncreaseQuality(item);
                 }
             }
         }
@@ -103,6 +91,9 @@ public class Store
 
     private static void IncreaseQuality(Item item, int amount = 1)
     {
-        item.Quality += amount;
+        if (item.Quality < 50)
+        {
+            item.Quality += amount;
+        }
     }
 }
